@@ -1,0 +1,36 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Die Häuser denen die drin wohnen",
+      "author": "Anna und Arthur",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellendus amet illo! Blanditiis numquam iure enim dolor quasi inventore perferendis? Sapiente aliquam nesciunt dolor et, quisquam hic sequi! Quibusdam facilis officiis reiciendis repellat explicabo blanditiis quis ut deserunt est, unde doloribus iusto fugit totam suscipit vitae qui! Ullam, modi unde."
+    },
+    {
+      "id": 269981144,
+      "title": "Eigentum Vernichtet",
+      "author": "Allas Mainz",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium nulla debitis, est inventore architecto pariatur voluptas consequuntur officiis? Possimus, doloribus voluptatibus repellendus nulla totam optio harum repellat temporibus debitis quae saepe alias quisquam ullam illum adipisci voluptatem! Quisquam provident ipsum fugit expedita quae deserunt eveniet quas corporis quo? Vitae, a?"
+    },
+    {
+      "id": 9293063332,
+      "title": "Die ganze Bäckerei!",
+      "author": "Better Life GmbH",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium nulla debitis, est inventore architecto pariatur voluptas consequuntur officiis? Possimus, doloribus voluptatibus repellendus nulla totam optio harum repellat temporibus debitis quae saepe alias quisquam ullam illum adipisci voluptatem! Quisquam provident ipsum fugit expedita quae deserunt eveniet quas corporis quo? Vitae, a?"
+    },
+    {
+      "id": 5678691104,
+      "title": "Why feminism is for everyone",
+      "author": "Chimamanda Ngozi Adichie ",
+      "content": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium nulla debitis, est inventore architecto pariatur voluptas consequuntur officiis? Possimus, doloribus voluptatibus repellendus nulla totam optio harum repellat temporibus debitis quae saepe alias quisquam ullam illum adipisci voluptatem! Quisquam provident ipsum fugit expedita quae deserunt eveniet quas corporis quo? Vitae, a?"
+    }
+  ],
+  "contact": [
+    {
+      "id": 9071914,
+      "userName": "asd",
+      "userMail": "asd@asd",
+      "message": "asdasd"
+    }
+  ]
+}
