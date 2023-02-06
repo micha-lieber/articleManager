@@ -7,7 +7,8 @@ React, CSS 3, react-router-dom@6.8
 
 # To try
 Run 
-```npm i
+```
+npm i
 ```
 Start json server with: 
 ```
