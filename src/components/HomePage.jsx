@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
 import { useTheme } from "../hooks/useTheme";
 
 export const HomePage = () => {
   const url = "http://localhost:4000/articles/";
-  const { data: articles, isPending, error } = useFetch(url);
+  const { data, isPending, error } = useFetch(url);
+  const [articles, setArticles] = useState([]);
+
   const { mode } = useTheme();
 
   const deleteHandler = async (articleId) => {
@@ -13,13 +15,15 @@ export const HomePage = () => {
     console.log("deleted");
   };
 
+  useEffect(() => setArticles(data?.reverse()), [data]);
+
   return (
     <div className={`homeContainer ${mode}`}>
       <h1>My Articles</h1>
       {isPending && <h3>Wait a second!</h3>}
       {error && <h3>{error}</h3>}
       {articles &&
-        articles.reverse().map((article) => (
+        articles.map((article) => (
           <div className="article" key={article.id}>
             <h2>{article.title}</h2>
             <p>By {article.author}</p>
