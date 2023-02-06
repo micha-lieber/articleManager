@@ -5,7 +5,7 @@ The Task was to create an article manager, that enables a user to post new artic
 # Build with
 React, CSS 3, react-router-dom@6.8
 
-# To try
+# To try (in VSCode)
 Run 
 ```
 npm i
