@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { useTheme } from "../hooks/useTheme";
 import { useFetch } from "../hooks/useFetch";
 
 export const ContactPage = () => {
@@ -9,6 +9,7 @@ export const ContactPage = () => {
   const [userMail, setUserMail] = useState("");
   const [description, setDespription] = useState("");
   const url = "http://localhost:4000/contact/";
+  const { mode } = useTheme();
 
   const submitHandler = async () => {
     try {
@@ -34,7 +35,7 @@ export const ContactPage = () => {
     }
   };
   return (
-    <div className="contactContainer">
+    <div className={`contactContainer`}>
       <h1>Contact me</h1>
       <form
         action="post"
@@ -83,7 +84,9 @@ export const ContactPage = () => {
             className="input"
           ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button className={`button ${mode}`} type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

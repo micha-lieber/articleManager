@@ -4,10 +4,7 @@
   box-sizing: border-box;
 }
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  height: 100vh;
   text-align: center;
   nav {
     padding: 1rem;
@@ -22,6 +19,7 @@
     }
   }
   .homeContainer {
+    margin: 0 auto;
     width: 75%;
     h1 {
       margin-top: 2rem;
@@ -59,6 +57,7 @@
       }
     }
   }
+
   .contactContainer,
   .newPostContainer {
     margin-top: 2rem;
@@ -101,6 +100,38 @@
       width: 75%;
       margin: 0 auto;
       margin-top: 3rem;
+    }
+  }
+}
+
+.App.dark {
+  background: black;
+  color: white;
+  nav a {
+    color: white;
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+  .link.dark {
+    background: white;
+    color: black;
+  }
+  .delete.dark {
+    background: black;
+    color: rgb(32, 32, 32);
+    &:hover {
+      color: white;
+    }
+  }
+  .button.dark {
+    background: white;
+    color: black;
+    &:hover {
+      background: black;
+      border: 1px solid white;
+      color: white;
     }
   }
 }

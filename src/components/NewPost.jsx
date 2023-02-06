@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useFetch } from "../hooks/useFetch";
+import { useTheme } from "../hooks/useTheme";
 
 export const NewPost = () => {
   const [title, setTitle] = useState("");
@@ -8,6 +9,7 @@ export const NewPost = () => {
   const [content, setContent] = useState("");
   const url = "http://localhost:4000/articles";
   const navigate = useNavigate();
+  const { mode } = useTheme();
 
   async function handleSubmit() {
     if (!title || !author || !content) {
@@ -84,7 +86,9 @@ export const NewPost = () => {
             rows="20"
           />
         </div>
-        <button type="submit">submit</button>
+        <button className={`button ${mode}`} type="submit">
+          submit
+        </button>
       </form>
     </div>
   );

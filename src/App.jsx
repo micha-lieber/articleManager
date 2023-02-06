@@ -6,14 +6,18 @@ import {
   ContactPage,
   NewPost,
   Success,
+  ThemeSelector,
 } from "./components/index";
 import { Navbar } from "./components/Navbar";
+import { useTheme } from "./hooks/useTheme";
 
 function App() {
+  const { mode } = useTheme();
   return (
-    <div className="App">
+    <div className={`App ${mode}`}>
       <BrowserRouter>
         <Navbar />
+        <ThemeSelector />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />
