@@ -15,4 +15,6 @@ Start json server with:
 json-server --watch ./Path/to/data/db.json --port 4000
 ```
 then run
-``` npm start```
+```
+npm start
+```
