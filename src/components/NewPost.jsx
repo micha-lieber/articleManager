@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useFetch } from "../hooks/useFetch";
 import { useTheme } from "../hooks/useTheme";
 
 export const NewPost = () => {
@@ -26,7 +25,6 @@ export const NewPost = () => {
             content: content,
           }),
         });
-        const json = await send.json();
 
         setTitle("");
         setAuthor("");

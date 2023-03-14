@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTheme } from "../hooks/useTheme";
-import { useFetch } from "../hooks/useFetch";
 
 export const ContactPage = () => {
   const navigate = useNavigate();
@@ -26,8 +25,7 @@ export const ContactPage = () => {
       if (!res.ok) {
         throw new Error(res.statusText);
       }
-      const data = await res.json();
-      console.log(data);
+
       alert("Your Post has been submitted!");
       navigate("/");
     } catch (error) {
